@@ -1,2 +1,5 @@
-class Room:
-    def __init__(self, name)
+import unittest
+from src.room import Room
+
+class TestRoom(unittest.TestCase):
+    pass
