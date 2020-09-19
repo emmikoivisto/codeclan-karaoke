@@ -21,3 +21,8 @@ class TestRoom(unittest.TestCase):
 
     def test_room_has_guestlist(self):
         self.assertEqual(2, self.room_name.guest_count())
+
+    def test_add_guest(self):
+        guest_3 = Guest("Jess", 28)
+        self.room_name.add_guest_to_guestlist(self.guest_3)
+        self.assertEqual(3, self.room_name)
