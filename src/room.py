@@ -12,4 +12,4 @@ class Room:
         return len(self.guest_list)
 
     def add_guest_to_guestlist(self, new_guest):
-        return self.guest_list + new_guest
+        return self.guest_list.append(new_guest)
