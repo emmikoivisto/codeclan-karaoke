@@ -13,3 +13,6 @@ class Room:
 
     def add_guest_to_guestlist(self, new_guest):
         return self.guest_list.append(new_guest)
+
+    def remove_guest_from_guestlist(self, guest_to_remove):
+        self.guest_list.remove(guest_to_remove)
